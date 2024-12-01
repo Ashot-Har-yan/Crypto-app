@@ -4,7 +4,8 @@ import { requestUrls } from "../../util/constants/requestUrls";
 import { CurrencyDetailResponseModel } from "../../ts/types/CurrencyDetailResponseModel";
 import { Card } from "antd";
 
-const {Meta} = Card
+const {Meta} = Card;
+
 const CryptoDetail = ()=>{
     const { id } = useParams<{id:string}>();
     const {data,loading,error} = useFetch<CurrencyDetailResponseModel>({
