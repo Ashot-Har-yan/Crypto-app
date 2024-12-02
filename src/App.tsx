@@ -9,7 +9,7 @@ import { CurrencyProvider } from './context/CurrencyContext'; // Import Currency
 function App() {
   return (
     <div className="App">
-      <CurrencyProvider>  {/* Wrap the entire app with CurrencyProvider */}
+      <CurrencyProvider>  
         <BrowserRouter>
           <Routes>
             <Route element={<MainLayout />}>

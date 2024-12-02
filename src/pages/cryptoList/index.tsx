@@ -72,7 +72,7 @@ const CryptoList = () => {
                 loading={loading}
                 dataSource={data || []}
                 pagination={{
-                    total: data ? data.length : 100,
+                    total: 100,
                     current: +page,
                     pageSize: +pageSize,
                     onChange(page, pageSize) {
