@@ -14,7 +14,8 @@ const CryptoDetail = ()=>{
             'x-cg-demo-api-key': process.env.REACT_APP_CRYPTO_API_KEY
         }
     })
-    
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error fetching data</div>;
     return(
         <div>
             <Card
